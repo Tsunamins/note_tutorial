@@ -1,5 +1,7 @@
 # README
 
+This code follows 3 videos on learn instruct on how to go about setting up a rails api with javascript frontend, commits are very step oriented
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
