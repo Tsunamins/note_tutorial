@@ -1,7 +1,7 @@
 class Api::V1::NotesController < ApplicationController
 
     def index
-        @notes = Note.All
+        @notes = Note.all
         render json: @notes, status: 200 
     end 
 
@@ -27,7 +27,7 @@ class Api::V1::NotesController < ApplicationController
         @note = Note.find(params[:id])
         @note.delete
         render json: {noteId: @note.id} #do not want to pass back all info, just the reference to what was deleted
-
+    end
     private
         def note_params
             params.require(:note).permit(:body) #for now
