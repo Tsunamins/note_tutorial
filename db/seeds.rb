@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Note.create([
+{body: 'The frontend (Vanilla JS) and backend (Rails...)'}, 
+{body: 'Install and configure Postgresql ...'}, 
+{body: 'Remember to use --database=postgresql...'}, 
+{body: 'Add support for ....'},
+{body: 'Design your data model to define the structure...'}, 
+{body: 'Remember to namespace your...'},
+{body: 'Learn .......'}, 
+{body: 'When lost tak a walk, then befriend....'}
+])
