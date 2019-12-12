@@ -1,0 +1,16 @@
+.container {
+    background-color: grey;
+}
+
+#new-note-form {
+    color: blue;
+    border: 4px solid teal;
+    border-radius: 25px;
+}
+
+#notes-container {
+    background-color: pink;
+    border-radius: 25px;
+
+}
+
