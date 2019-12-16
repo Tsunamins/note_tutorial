@@ -21,8 +21,24 @@ class Notes {
     }
 
     render(){
+        //consider from here have access to this.notes, try console.log(this.notes)
+        
+        
+
         const notesContainer = document.getElementById('notes-container')
-        notesContainer.innerHTML = 'my notes here'
+        notesContainer.innerHTML = this.notes.map(note => `<li>${note.body}</li>`).join('') //join because other wise each <li> marker is in individual array which won't process in html doc, join the array to make a string to render in in html document
+        
+        
+
+
+        //my simple solution, not working with ul/li
+        // this.notes.forEach(note => {
+        //     const p = document.createElement('p')
+        //     p.innerHTML = `<p>${note.body}</p>` //is this way simpler, however?
+        //     notesContainer.appendChild(p)
+        //})
+
+        
         
 
     }
