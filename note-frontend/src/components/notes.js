@@ -19,7 +19,11 @@ class Notes {
         //to see if function is working: console.log('note is being created')
         const value = this.newNoteBody.value
 
-        this.adapter.createNote(value)
+        this.adapter.createNote(value).then(note => {  //cont from POST req in NotesAdapter
+            this.notes.push(new Note(note)) //create new instance of note and push to array, thus add to dom
+            this.newNoteBody.value = "" //clear repeated values from the previous entry, otherwise stays in the bar on submit
+            this.render() //call render again so it updates the dom on addition of new note, can see new note without refresh
+        })
     }
 
     fetchAndLoadNotes() {
