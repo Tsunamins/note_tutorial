@@ -11,7 +11,7 @@ class Api::V1::NotesController < ApplicationController
     end 
 
     def create
-        binding.pry
+        #binding.pry
         #same here later change to Note.new, following if statement with applied conventions
         @note = Note.create(note_params)
         render json: @note, status: 200
