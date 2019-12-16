@@ -5,8 +5,9 @@ class NotesAdapter { //will communicate with backend API, sometimes called servi
     }
 
     getNotes() {//consider instance method
-        return fetch(this.baseUrl).then(res => res.json()
-        ) //parse response into json
+        return fetch(this.baseUrl)
+        .then(res => res.json()) //parse response into json
+        
     }
 }
 
